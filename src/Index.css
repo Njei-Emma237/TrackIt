@@ -1,1 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  line-height: 1.6;
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+/* Dark mode styles */
+.dark {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+.dark body {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-fade-in-fast {
+  animation: fadeIn 0.15s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Prose styles for content pages */
+.prose {
+  max-width: none;
+}
+
+.prose p {
+  margin-bottom: 1.25em;
+}
+
+.prose h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+.prose ul {
+  margin-bottom: 1.25em;
+  padding-left: 1.625em;
+}
+
+.prose li {
+  margin-bottom: 0.5em;
+}
+
+.dark .prose {
+  color: #d1d5db;
+}
+
+.dark .prose h3 {
+  color: #f9fafb;
+}
+
+/* Utility classes for the app */
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.transition-colors {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
