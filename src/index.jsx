@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import './index.css';
 import { 
   Package, Truck, Mail, Box, AlertTriangle, CheckCircle, XCircle, Trash2, History,
   MoreVertical, Star, Edit3, Archive, X, Menu, Settings, Info, HelpCircle,
